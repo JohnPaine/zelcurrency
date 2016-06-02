@@ -55,8 +55,8 @@ namespace ZelCurrency.Droid.Adapters
 
             FindViews(convertView);
 
-            CurrencyEditText.Text = currencyInfo.CurrentBuyingCurrency?.ToString() ?? "...";
-            CurrencyDiffEditText.Text = currencyInfo.CurrentSellingCurrency?.ToString() ?? "...";
+//            CurrencyEditText.Text = currencyInfo.CurrentBuyingCurrency?.ToString() ?? "...";
+//            CurrencyDiffEditText.Text = currencyInfo.CurrentSellingCurrency?.ToString() ?? "...";
             BankInfoTextView.Text = currencyInfo.BankName;
             if (init)
             {

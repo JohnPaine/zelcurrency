@@ -49,7 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adapters\CurrencyViewAdapter.cs" />
+    <Compile Include="Adapter\CurrencyViewAdapter.cs" />
+    <Compile Include="Core\CurrencyProvider.cs" />
+    <Compile Include="Core\FakeCurrencyInfo.cs" />
     <Compile Include="Core\ICurrencyInfo.cs" />
     <Compile Include="Core\ICurrencyProvider.cs" />
     <Compile Include="MainActivity.cs" />
@@ -61,9 +63,7 @@
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\CurrencyListItem.axml">
-      <SubType>AndroidResource</SubType>
-    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CurrencyListItem.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
