@@ -38,6 +38,7 @@
     <Compile Include="BankConfigRecord.cs" />
     <Compile Include="CurrencyProvider.cs" />
     <Compile Include="FakeCurrencyInfo.cs" />
+    <Compile Include="FakeCurrencyProvider.cs" />
     <Compile Include="ICurrencyInfo.cs" />
     <Compile Include="ICurrencyProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
