@@ -4,7 +4,7 @@ using System.Linq;
 using Android.App;
 using Android.Views;
 using Android.Widget;
-using ZelCurrency.Droid.Core;
+using ZelCurrency.Core;
 
 namespace ZelCurrency.Droid.Adapters
 {
@@ -44,7 +44,7 @@ namespace ZelCurrency.Droid.Adapters
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             // TODO: change sorting param
-            var infos = _currencyInfos.OrderBy(r => r.BankAddress).ToList();
+            var infos = _currencyInfos.OrderBy(r => r.BankName).ToList();
             var currencyInfo = infos[position];
             var init = false;
 

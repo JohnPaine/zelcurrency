@@ -9,8 +9,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Util;
+using ZelCurrency.Core;
 using ZelCurrency.Droid.Adapters;
-using ZelCurrency.Droid.Core;
 
 namespace ZelCurrency.Droid
 {
@@ -46,14 +46,13 @@ namespace ZelCurrency.Droid
 
             AmountToExchange = Intent.GetIntExtra("amount_to_change", 1);
 
-            
+            CurrencyProvider = new FakeCurrencyProvider();
 
             var infos = CurrencyProvider.CurrencyInfos().ToList();
 
             var adapter = new CurrencyViewAdapter(this, infos, AmountToExchange);
-
              
-            var tasks = infos.Select(info=> info.GetBuyingCurrency().ContinueWith((value) => CurrencyListView.InvalidateViews()));
+            var tasks = infos.Select(info=> info.LoadExchangeRates().ContinueWith((t) => CurrencyListView.InvalidateViews()));
             await  Task.WhenAll(tasks);
         }
     }
