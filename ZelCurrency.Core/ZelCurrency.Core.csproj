@@ -34,18 +34,30 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Caching\CacheHelper.cs" />
-    <Compile Include="Caching\CacheProvider.cs" />
-    <Compile Include="Configuration\BankElement.cs" />
-    <Compile Include="Configuration\BanksConfig.cs" />
-    <Compile Include="Configuration\ConfigHelper.cs" />
-    <Compile Include="Configuration\ParserElement.cs" />
-    <Compile Include="Parsers.cs" />
+    <Compile Include="BankConfigProvider.cs" />
+    <Compile Include="BankConfigRecord.cs" />
+    <Compile Include="CurrencyProvider.cs" />
+    <Compile Include="FakeCurrencyInfo.cs" />
+    <Compile Include="FakeCurrencyProvider.cs" />
+    <Compile Include="ICurrencyInfo.cs" />
+    <Compile Include="ICurrencyProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPageParserCurrencyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="BanksConfig.config" />
+    <EmbeddedResource Include="BanksConfig.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

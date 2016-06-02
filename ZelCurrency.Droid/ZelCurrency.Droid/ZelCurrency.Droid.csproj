@@ -50,10 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapter\CurrencyViewAdapter.cs" />
-    <Compile Include="Core\CurrencyProvider.cs" />
-    <Compile Include="Core\FakeCurrencyInfo.cs" />
-    <Compile Include="Core\ICurrencyInfo.cs" />
-    <Compile Include="Core\ICurrencyProvider.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

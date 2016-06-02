@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace ZelCurrency.Droid.Core
+﻿namespace ZelCurrency.Core
 {
+    using System.Collections.Generic;
+
     public interface ICurrencyProvider
     {
         IEnumerable<ICurrencyInfo> CurrencyInfos ();
