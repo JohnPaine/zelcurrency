@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BanksConfig" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;BanksConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;Banks&gt;
+    &lt;Bank IsExtended="true" Id="alpha" Title="Альфабанк [*]" Url="https://alfabank.ru/atms/moscow/atm-102530/" SpecialUrl="https://alfabank.ru/_/ajax/_get_currency.html?dt_from={DAYS:30}&amp;amp;dt_to={DAYS:0}&amp;amp;city_id=21&amp;amp;rnd={RND}" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[840_misc_make-cash_buy.*?val.:\[([\d\.]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[840_misc_make-cash_sell.*?val.:\[([\d\.]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="bm" Title="Банк Москвы [438a]" Url="http://www.bm.ru/ru/ofisy-banka/otdelenija/?id_office=29988" SpecialUrl="http://www.bm.ru/ru/personal/services/exchange/" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[&lt;td&gt;\s*USD\s*&lt;\/td&gt;\s*&lt;td&gt;[^&lt;]+?&lt;\/td&gt;\s*&lt;td&gt;\s*([\d\.\,]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[&lt;td&gt;\s*USD\s*&lt;\/td&gt;\s*&lt;td&gt;[^&lt;]+?&lt;\/td&gt;\s*&lt;td&gt;\s*[\d\.\,]+\s*&lt;\/td&gt;\s*&lt;td&gt;\s*([\d\.\,]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="vtb" Title="ВТБ [1805]" Url="http://www.vtb24.ru/personal/Pages/default.aspx?geo=zelenograd" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[.CurrencyGroupAbbr.:.cash.,.CurrencyAbbr.:.USD.,[^\}]+?Buy.:.([\d\.\,]+)[^\}]+?Gradation.:1,]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[.CurrencyGroupAbbr.:.cash.,.CurrencyAbbr.:.USD.,[^\}]+?[^\}]+?Sell.:.([\d\.\,]+)[^\}]+?Gradation.:1,]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="openbank" Title="Открытие [1824]" Url="https://www.openbank.ru/addresses?city=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0" SpecialUrl="https://www.openbank.ru" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[USD&lt;\/span&gt;&lt;span[^&gt;]+&gt;([\d\.\,]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[USD&lt;\/span&gt;&lt;span[^&gt;]+&gt;[\d\.\,]+&lt;\/span&gt;&lt;span[^&gt;]+&gt;([\d\.\,]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="psbank" Title="Промсвязьбанк [445]" Url="http://www.psbank.ru/Office?OfficeId=612" SpecialUrl="http://www.psbank.ru/Personal/Everyday/Rates/Geo/Moscow" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[5\&amp;nbsp;000\&amp;nbsp;USD[^&lt;]*[\s\S]+?&gt;([\d\.\,]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[5\&amp;nbsp;000\&amp;nbsp;USD[^&lt;]*[\s\S]+?&gt;[\d\.\,]+[\s\S]+?&gt;([\d\.\,]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="raiffeisen" Title="Райффайзен [828]" Url="http://www.raiffeisen.ru/offices/poi/?id=951" SpecialUrl="http://www.raiffeisen.ru/" Encoding="Windows-1251"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[&lt;tr&gt;\s*&lt;td class=.name.&gt;USD&lt;\/td&gt;\s*&lt;td&gt;([\d\.\,]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[&lt;tr&gt;\s*&lt;td class=.name.&gt;USD&lt;\/td&gt;\s*&lt;td&gt;[\d\.\,]+&lt;\/td&gt;\s*&lt;td&gt;([\d\.\,]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="rosbank" Title="Росбанк [601]" Url="http://www.rosbank.ru/ru/offices/detail/moskovskaya_oblast/Zelenogradskij/" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[&lt;tr class=.bordered.&gt;\s*&lt;td&gt;([\d\.\,]+)&amp;nbsp;\/&amp;nbsp;[\d\.\,]+&lt;\/td&gt;]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[&lt;tr class=.bordered.&gt;\s*&lt;td&gt;[\d\.\,]+&amp;nbsp;\/&amp;nbsp;([\d\.\,]+)&lt;\/td&gt;]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="rgsbank" Title="Росгосстрахбанк [БЦ]" Url="http://rgsbank.ru/about/branches/zelenograd/detail259807/" SpecialUrl="http://rgsbank.ru/" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[arRates\[.USD_RUR.\]\s*=\s*([\d\.\,]+);]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[arRates\[.RUR_USD.\]\s*=\s*([\d\.\,]+);]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="runabank" Title="Рунабанк [1011]" Url="http://www.runabank.ru/contacts/" SpecialUrl="http://www.runabank.ru/Stavki/kurs_z.xml" Encoding="Windows-1251"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[&lt;USD_pok&gt;([\d\.\,]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[&lt;USD_prod&gt;([\d\.\,]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;!--&lt;Bank Id="rsb" Title="Русский стандарт [1824]" Url="http://www.rsb.ru/about/branch/zelenograd/213637291/" SpecialUrl="http://www.rsb.ru/courses/" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[&lt;b&gt;usd&lt;/b&gt;[\s\S]+?&lt;span[^&gt;]+&gt;([\d\.\,]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[&lt;b&gt;usd&lt;/b&gt;[\s\S]+?&lt;span[^&gt;]+&gt;[\s\S]+?&lt;span[^&gt;]+&gt;([\d\.\,]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;--&gt;
+    &lt;Bank Id="sberbank" Title="Сбербанк" Url="http://sberbank.ru/ru/about/today/oib" SpecialUrl="http://www.sberbank.ru/moscowoblast/ru/quotes/currencies/" Encoding="Windows-1251"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[alt=.USD. title=[\s\S]+?&lt;td[\s\S]+?&lt;td.*\s*([\d\.\,]+)\s*&lt;\/td&gt;]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[alt=.USD. title=[\s\S]+?&lt;td[\s\S]+?&lt;td.*\s*[\d\.\,]+[\s\S]+?([\d\.\,]+)\s*&lt;\/td&gt;]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="sdm" Title="СДМ [БЦ]" Url="http://www.sdm.ru/koordinaty/2130/" SpecialUrl="http://www.sdm.ru/" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[отделений:[\s\S]*?Зеленогpадское[\s\S]*?&lt;tr&gt;\s*&lt;td&gt;USD&lt;\/td&gt;\s*&lt;td&gt;([\d\.\,]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[отделений:[\s\S]*?Зеленогpадское[\s\S]*?&lt;tr&gt;\s*&lt;td&gt;USD&lt;\/td&gt;\s*&lt;td&gt;[\d\.\,]+&lt;\/td&gt;\s*&lt;td&gt;([\d\.\,]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="smpbank" Title="СМП [1824]" Url="http://smpbank.ru/ru/about/contact?branch=37" SpecialUrl="http://smpbank.ru/" Encoding="UTF-8"&gt;
+      &lt;PatternSell&gt;&lt;![CDATA[&lt;tr&gt;\s*&lt;td[^&gt;]+&gt;USD[^&lt;]*&lt;\/td&gt;\s*&lt;td[^&gt;]+&gt;([\d\.\,]+)]]&gt;&lt;/PatternSell&gt;
+      &lt;PatternBuy&gt;&lt;![CDATA[&lt;tr&gt;\s*&lt;td[^&gt;]+&gt;USD[^&lt;]*&lt;\/td&gt;\s*&lt;td[^&gt;]+&gt;[\d\.\,]+&lt;\/td&gt;\s*&lt;td[^&gt;]+&gt;([\d\.\,]+)]]&gt;&lt;/PatternBuy&gt;
+    &lt;/Bank&gt;
+    &lt;Bank Id="citadele" Title="Цитадель" Url="https://www.citadele.lv/ru/rates/" SpecialUrl="https://www.citadele.lv/ru/rates/" Encoding="UTF-8"&gt;
+      &lt;Parser&gt;
+        &lt;Function&gt;GetCitadele&lt;/Function&gt;
+        &lt;Pattern&gt;&lt;![CDATA[&lt;table [^&gt;]*rates01[^&gt;]*&gt;([\s\S]+?)RUR[\s\S]+?&lt;table [^&gt;]*rates02[^&gt;]*&gt;([\s\S]+?)&lt;\/table&gt;]]&gt;&lt;/Pattern&gt;
+      &lt;/Parser&gt;
+    &lt;/Bank&gt;
+  &lt;/Banks&gt;
+&lt;/BanksConfig&gt;</value>
+  </data>
+</root>

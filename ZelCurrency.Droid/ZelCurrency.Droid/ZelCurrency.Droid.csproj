@@ -49,10 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\CurrencyProvider.cs" />
-    <Compile Include="Core\FakeCurrencyInfo.cs" />
-    <Compile Include="Core\ICurrencyInfo.cs" />
-    <Compile Include="Core\ICurrencyProvider.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
