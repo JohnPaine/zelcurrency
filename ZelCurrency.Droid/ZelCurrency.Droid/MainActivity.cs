@@ -54,8 +54,10 @@ namespace ZelCurrency.Droid
             ShowSellCurrencyViewButton = FindViewById<ToggleButton> (Resource.Id.sellCurrencyViewToggleButton);
             ShowSellCurrencyViewButton.CheckedChange +=
                 async delegate (object sender, CompoundButton.CheckedChangeEventArgs args) {
-                    if (!ShowBuyCurrencyViewButton.Checked && !args.IsChecked)
+                    if (!ShowBuyCurrencyViewButton.Checked && !args.IsChecked) {
+                        ShowSellCurrencyViewButton.Checked = true;
                         return;
+                    }
 
                     if (!args.IsChecked)
                         return;
@@ -66,8 +68,10 @@ namespace ZelCurrency.Droid
             ShowBuyCurrencyViewButton = FindViewById<ToggleButton> (Resource.Id.buyCurrencyViewToggleButton);
             ShowBuyCurrencyViewButton.CheckedChange +=
                 async delegate (object sender, CompoundButton.CheckedChangeEventArgs args) {
-                    if (!ShowSellCurrencyViewButton.Checked && !args.IsChecked)
+                    if (!ShowSellCurrencyViewButton.Checked && !args.IsChecked) {
+                        ShowBuyCurrencyViewButton.Checked = true;
                         return;
+                    }
 
                     if (!args.IsChecked)
                         return;
