@@ -73,10 +73,7 @@ namespace ZelCurrency.Droid
 			public const int buyCurrencyViewToggleButton = 2131034120;
 			
 			// aapt resource value: 0x7f050004
-			public const int currencyDiffEditText = 2131034116;
-			
-			// aapt resource value: 0x7f050003
-			public const int currencyEditText = 2131034115;
+			public const int currencyDiffTextView = 2131034116;
 			
 			// aapt resource value: 0x7f050001
 			public const int currencyItemLayout = 2131034113;
@@ -89,6 +86,9 @@ namespace ZelCurrency.Droid
 			
 			// aapt resource value: 0x7f050000
 			public const int currencyMainItemLayout = 2131034112;
+			
+			// aapt resource value: 0x7f050003
+			public const int currencyTextView = 2131034115;
 			
 			// aapt resource value: 0x7f050006
 			public const int exchangeDirectionLayout = 2131034118;

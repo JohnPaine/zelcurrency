@@ -27,7 +27,7 @@
 
         public async Task LoadExchangeRates()
         {
-            await Task.Delay(rnd.Next(10000) + 500);
+            await Task.Delay(rnd.Next(1000) + 500);
 
             this.BuyRate = baseExchangeRate - (decimal)rnd.NextDouble() * 4m;
             this.SellRate = baseExchangeRate + (decimal)rnd.NextDouble() * 4m;

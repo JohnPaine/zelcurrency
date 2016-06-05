@@ -1,6 +1,12 @@
-﻿namespace ZelCurrency.Core
+﻿using System.Threading.Tasks;
+
+namespace ZelCurrency.Core
 {
-    using System.Threading.Tasks;
+    public enum ExchangeDirection
+    {
+        Buy,
+        Sell
+    }
 
     public interface ICurrencyInfo
     {
@@ -11,6 +17,6 @@
         decimal? BuyRate { get; }
         decimal? SellRate { get; }
 
-        Task LoadExchangeRates();
+        Task LoadExchangeRates ();
     }
 }
